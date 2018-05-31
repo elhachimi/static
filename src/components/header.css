@@ -1,0 +1,10 @@
+header {
+  border-bottom: 1px solid #F7F7F7
+}
+.menu li{
+  display: inline;
+  margin-right: 2rem;
+}
+.menu ul{
+  margin-bottom: 0
+}
