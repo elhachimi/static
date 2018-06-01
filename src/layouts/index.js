@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import 'normalize.css'
 
-import Header from '../components/header'
+import Navigation from '../components/Navigation'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -14,8 +15,8 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div>{children()}</div>
+    <Navigation siteTitle={data.site.siteMetadata.title} />
+    <div className="white col-12 overflow-hidden">{children()}</div>
   </div>
 )
 

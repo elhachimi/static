@@ -1,0 +1,16 @@
+.menu li{
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.menu ul{
+  margin: 0;
+}
+
+.menu a:hover {
+  text-decoration: none;
+}
+
+.menu img {
+  vertical-align: middle;
+}

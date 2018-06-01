@@ -1,0 +1,7 @@
+.section1 {
+  background-image: url('../assets/images/refl-hero.svg');
+  background-repeat: no-repeat;
+}
+.section1 img{
+  margin-bottom: 0
+}
