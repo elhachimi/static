@@ -1,0 +1,27 @@
+.footer {
+  border-bottom: solid 1px #ececec;
+}
+
+.footer ul {
+  margin: 0
+}
+
+.footer li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: #0055ff;
+}
+
+.footer h2{
+  margin-top:.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.footer svg {
+  vertical-align: middle;
+  max-width: 12rem;
+}

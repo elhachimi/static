@@ -1,16 +1,17 @@
-.menu li{
+.menu li {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
-.menu ul{
+.menu ul {
   margin: 0;
 }
 
-.menu a:hover {
-  text-decoration: none;
+.menu a {
+  font-family: 'Roboto', sans-serif;
 }
 
-.menu img {
+.menu svg {
   vertical-align: middle;
+  max-width: 12rem;
 }

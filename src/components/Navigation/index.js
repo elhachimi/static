@@ -1,15 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './navigation.module.css'
-import Logo from '../../assets/images/Logo.svg'
+import Logo from '../../assets/images/Logo'
 
 const Header = ({ siteTitle }) => (
-  <header className={`${styles.menu} col-12 px3`}>
-    <nav className='flex justify-between items-baseline'>
-      <ul className='py3'>
+  <header className={`${styles.menu} col-12 px4`}>
+    <nav className="flex justify-between items-baseline">
+      <ul className="py3">
         <li>
           <Link to="/">
-            <img src={Logo} alt={siteTitle} />
+            <Logo />
           </Link>
         </li>
         <li>
@@ -25,14 +25,17 @@ const Header = ({ siteTitle }) => (
           <Link to="">Learn</Link>
         </li>
       </ul>
-      <ul className='py3'>
+      <ul className="py3">
         <li>
           <Link to="" className="text-blue strong">
             Login
           </Link>
         </li>
         <li>
-          <Link className="text-white strong green green-shadow rounded px2 py1" to="">
+          <Link
+            className="text-white strong green green-shadow rounded px2 py1"
+            to=""
+          >
             Sign up
           </Link>
         </li>

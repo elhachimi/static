@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import 'normalize.css'
 
 import Navigation from '../components/Navigation'
+import Footer from '../components/Footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -17,6 +18,7 @@ const Layout = ({ children, data }) => (
     />
     <Navigation siteTitle={data.site.siteMetadata.title} />
     <div className="white col-12 overflow-hidden">{children()}</div>
+    <Footer />
   </div>
 )
 
