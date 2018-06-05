@@ -6,6 +6,9 @@ import Illustration2 from '../assets/images/illustration-2.svg'
 import team from '../assets/images/team.svg'
 import support from '../assets/images/support.svg'
 import tools from '../assets/images/tools.svg'
+import mackbook from '../assets/images/macbook.svg';
+import illustration3  from '../assets/images/illustration-3.svg';
+import browser  from '../assets/images/browser.svg';
 
 export default () => (
   <React.Fragment>
@@ -32,7 +35,7 @@ export default () => (
       </h1>
     </div>
     <div className={styles.section2}>
-      <section className="px4 py4">
+      <section className="px4 py4 flex">
         <div className="col-6 pr2">
           <h2 className="text-green">SUPPORT &amp; DEV TEAMS</h2>
           <h1 className="pb2">Cut support costs</h1>
@@ -43,9 +46,15 @@ export default () => (
             the problem at hand.
           </p>
         </div>
+        <div className="col-6 flex justify-end relative">
+          <img src={mackbook} alt="" className="absolute"/>
+        </div>
       </section>
-      <section className="px4 py4">
-        <div className="col-6 col-offset-6">
+      <section className="px4 py5 flex">
+        <div className="col-6 relative">
+          <img src={illustration3} alt="" className="absolute"/>
+        </div>
+        <div className="col-6">
           <h2 className="text-green">END USERS</h2>
           <h1 className="pb2">Build customer trust</h1>
           <p>
@@ -55,7 +64,7 @@ export default () => (
           </p>
         </div>
       </section>
-      <section className="px4 py4">
+      <section className="px4 py5 flex">
         <div className="col-6 pr2">
           <h2 className="text-green">SALES &amp; MARKETING TEAMS</h2>
           <h1 className="pb2">Showcase reliability</h1>
@@ -66,9 +75,12 @@ export default () => (
             customers.
           </p>
         </div>
+        <div className="col-6 flex justify-end relative z1">
+          <img src={browser} alt="" className="absolute"/>
+        </div>
       </section>
     </div>
-    <section className={`${styles.section3} px4 py4 blueGray`}>
+    <section className={`${styles.section3} px4 py4 blueGray relative z2`}>
       <div className="max-width-3 mx-auto pb4">
         <h1 className="center text-white">How it works?</h1>
       </div>
