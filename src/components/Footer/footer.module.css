@@ -25,3 +25,21 @@
   vertical-align: middle;
   max-width: 12rem;
 }
+
+@media (max-width: 39.99rem) {
+  .footer h2 {
+    margin-bottom: 1rem;
+  }
+  footer div:last-child div:first-child span, footer div:last-child div:first-child a{
+    display: block;
+  }
+  footer div:last-child div:last-child{
+    margin-left:0
+  }
+  footer div:last-child div:last-child a {
+    justify-content: flex-start;
+    margin-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

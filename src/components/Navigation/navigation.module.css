@@ -2,7 +2,6 @@
   display: inline-block;
   margin-right: 4rem;
 }
-
 .menu ul {
   margin: 0;
 }
@@ -14,4 +13,14 @@
 .menu svg {
   vertical-align: middle;
   max-width: 12rem;
+}
+@media (max-width: 39.99rem) {
+  .menu ul:last-child li:first-child,
+  .menu ul:first-child li {
+    display: none;
+  }
+  .menu ul:first-child li:first-child,.menu ul:last-child li:last-child  {
+    display: block;
+    margin-right: 0;
+  }
 }

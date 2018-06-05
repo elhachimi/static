@@ -9,12 +9,12 @@ import linkedin from '../../assets/images/linkedin.svg'
 
 const Footer = () => (
   <footer className="px3">
-    <div className={`${styles.footer} flex py4`}>
-      <div className="col-4">
+    <div className={`${styles.footer} flex item-center flex-wrap py4 xs-py3`}>
+      <div className="col-12 lg-col-4 md-col-4 xs-mb3">
         <Logo />
       </div>
-      <div className="col-2">
-        <h2>Product</h2>
+      <div className="col-12 lg-col-2 md-col-2 xs-mb2">
+        <h2 className="xs-mb2">Product</h2>
         <ul>
           <li>
             <Link to="">Popular</Link>
@@ -30,7 +30,7 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="col-2">
+      <div className="col-12 lg-col-2 md-col-2 xs-mb2">
         <h2>Comunity</h2>
         <ul>
           <li>
@@ -47,7 +47,7 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="col-2">
+      <div className="col-12 lg-col-2 md-col-2 xs-mb2">
         <h2>Support</h2>
         <ul>
           <li>
@@ -64,7 +64,7 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="col-2">
+      <div className="col-12 lg-col-2 md-col-2 xs-mb2">
         <h2>Legal</h2>
         <ul>
           <li>
@@ -79,14 +79,14 @@ const Footer = () => (
         </ul>
       </div>
     </div>
-    <div className="flex pt3 pb4">
-      <div className="col-8 flex justify-between">
+    <div className="flex pt3 pb4 flex-wrap">
+      <div className="col-12 md-col-8 lg-col-8 flex justify-between">
         <Link to="">Languages</Link>
         <Link to="">Privacy Policy</Link>
         <Link to="">Terms &amp; Conidtions</Link>
         <span>&copy; 2018 Mercycircles. All rights reserved.</span>
       </div>
-      <div className="col-2 col-offset-2 flex justify-between">
+      <div className="col-12 lg-col-2 md-col-2 col-offset-2 flex justify-between">
         <Link to="">
           <img src={facebook} />
         </Link>
