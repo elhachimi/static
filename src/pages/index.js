@@ -7,13 +7,14 @@ import team from '../assets/images/team.svg'
 import support from '../assets/images/support.svg'
 import tools from '../assets/images/tools.svg'
 import mackbook from '../assets/images/macbook.svg';
+import smackbook from '../assets/images/macbook_color.js';
 import illustration3  from '../assets/images/illustration-3.svg';
 import browser  from '../assets/images/browser.svg';
 
 export default () => (
   <React.Fragment>
-    <section className={`${styles.section1} flex px4 pt4 blueGray`}>
-      <div className="col-6 pt5">
+    <section className={`${styles.section1} flex flex-wrap items-center px4 pt4 xs-px3 sm-py0 xs-py0 blueGray`}>
+      <div className="md-col-6 lg-col-6 col-12 pt5 xs-pt1">
         <h1>A whole new way to invest in real estate.</h1>
         <h2>
           Introducing the first private market real estate investing platform
@@ -25,7 +26,7 @@ export default () => (
           Join now
         </Link>
       </div>
-      <div className="col-6 flex justify-end">
+      <div className="md-col-6 lg-col-6 col-12 flex justify-end illustration xs-pt3">
         <img src={Illustration1} alt="" />
       </div>
     </section>
@@ -35,8 +36,8 @@ export default () => (
       </h1>
     </div>
     <div className={styles.section2}>
-      <section className="px4 py4 flex">
-        <div className="col-6 pr2">
+      <section className="px4 py4 flex flex-wrap items-center xs-px3 xs-py0">
+        <div className="lg-col-6 md-col-6 col-12 pr2">
           <h2 className="text-green">SUPPORT &amp; DEV TEAMS</h2>
           <h1 className="pb2">Cut support costs</h1>
           <p>
@@ -46,15 +47,16 @@ export default () => (
             the problem at hand.
           </p>
         </div>
-        <div className="col-6 flex justify-end relative">
-          <img src={mackbook} alt="" className="absolute"/>
+        <div className="lg-col-6 md-col-6 col-12 flex justify-end relative">
+          <img src={mackbook} alt="" className="absolute xs-hide"/>
+          <img src={smackbook} alt="" className="lg-hide"/> 
         </div>
       </section>
-      <section className="px4 py5 flex">
-        <div className="col-6 relative">
+      <section className="px4 py5 flex flex-wrap items-center xs-px3 xs-py0 ">
+        <div className="lg-col-6 md-col-6 col-12 relative flex">
           <img src={illustration3} alt="" className="absolute"/>
         </div>
-        <div className="col-6">
+        <div className="lg-col-6 md-col-6 col-12 ">
           <h2 className="text-green">END USERS</h2>
           <h1 className="pb2">Build customer trust</h1>
           <p>
@@ -64,8 +66,8 @@ export default () => (
           </p>
         </div>
       </section>
-      <section className="px4 py5 flex">
-        <div className="col-6 pr2">
+      <section className="px4 py5 flex flex-wrap items-center xs-px3 xs-py0">
+        <div className="col-12 lg-col-6 md-col-6 pr2">
           <h2 className="text-green">SALES &amp; MARKETING TEAMS</h2>
           <h1 className="pb2">Showcase reliability</h1>
           <p>
@@ -75,25 +77,25 @@ export default () => (
             customers.
           </p>
         </div>
-        <div className="col-6 flex justify-end relative z1">
+        <div className="col-12 lg-col-6 md-col-6 flex justify-end relative z1">
           <img src={browser} alt="" className="absolute"/>
         </div>
       </section>
     </div>
-    <section className={`${styles.section3} px4 py4 blueGray relative z2`}>
-      <div className="max-width-3 mx-auto pb4">
+    <section className={`${styles.section3} px4 py4 blueGray relative z2 xs-px3 xs-py3`}>
+      <div className="max-width-3 mx-auto pb4 xs-pb2">
         <h1 className="center text-white">How it works?</h1>
       </div>
-      <div className="flex">
-        <div className="col-6 flex px3  justify-center items-center">
+      <div className="flex flex-wrap items-center">
+        <div className="col-12 lg-col-6 md-col-6 flex px3 xs-px0 justify-center items-center">
           <img src={Illustration2} alt="" />
         </div>
-        <div className="col-6">
+        <div className="lg-col-6 md-col-6 col-12">
           <div className="flex py2">
-            <div className="col-2 ">
+            <div className="col-2">
               <img src={team} alt="team" />
             </div>
-            <div className="pl2">
+            <div className="pl2 xs-pl1">
               <h2 className="text-white mb2">DevOps Teams</h2>
               <p className="text-white">
                 When servers are on fire, your team needs to be focused on
@@ -104,11 +106,11 @@ export default () => (
               </p>
             </div>
           </div>
-          <div className="flex py2">
+          <div className="flex py2 ">
             <div className="col-2 ">
               <img src={support} alt="support" />
             </div>
-            <div className="pl2">
+            <div className="pl2 xs-pl1">
               <h2 className="text-white mb2">Support Teams</h2>
               <p className="text-white">
                 When servers are on fire, your team needs to be focused on
@@ -123,7 +125,7 @@ export default () => (
             <div className="col-2 ">
               <img src={tools} alt="" />
             </div>
-            <div className="pl2">
+            <div className="pl2 xs-pl1">
               <h2 className="text-white mb2">IT Teams</h2>
               <p className="text-white">
                 When servers are on fire, your team needs to be focused on
